@@ -37,5 +37,4 @@ const ernie {
 
 6. What is Encapsulation?
 
-Encapsulation is putting all of the properties and methods into a package and
-attaching it to a variable through an object. 
+Encapsulation describes consolidating an object’s properties and methods into a package and attaching it to a variable
