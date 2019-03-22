@@ -1,0 +1,13 @@
+Everything in JavaScript is an object or can be treated like one. 
+
+
+DOM elements are objects and have properties and methods.
+
+1. For example, I can get an element styles with the style property.
+I can get the HTML that an element is made of with the innerHTML property.
+I can even get an element's parent with the parentNode property, or
+its children with the childNodes property.
+DOM objects have methods as well, like getElementById or appendChild.
+
+2. Arrays have properties like length and methods like push, pop, and concat.
+
