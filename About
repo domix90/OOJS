@@ -11,3 +11,31 @@ DOM objects have methods as well, like getElementById or appendChild.
 
 2. Arrays have properties like length and methods like push, pop, and concat.
 
+-------------------------------------------------------------------------------------
+
+
+3. Properties are like object specific variables that store information
+in a series of key value pairs.
+
+
+4. Methods are object specific functions that let your object do something or
+let something be done to it.
+
+5. Object literals are one way to create an object and
+they're really great when you're modeling only one single specific thing.
+
+EXAMPLE 
+
+const ernie {
+  name : 'Ernie', 
+  animal : 'dog', 
+  breed : 'pug',
+  bark : function () {
+          console.log('Woof');
+  }
+}
+
+6. What is Encapsulation?
+
+Encapsulation is putting all of the properties and methods into a package and
+attaching it to a variable through an object. 
