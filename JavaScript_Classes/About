@@ -1,0 +1,61 @@
+import axios from 'axios';
+
+export default class RandomCrawler {
+	log: string;
+
+	constructor() {
+		this.log = 'this is inside our class';
+	}
+
+	async getHtml(): Promise<string | null> {
+		try {
+			console.log(this.log);
+			const dataFromX = await axios.get('https://www.agriaffaires.co.uk/');
+      
+     
+			return dataFromX.data;
+		}	catch (error) {
+			console.log(error.toString());
+		}
+
+		return null;
+	}
+}
+
+
+
+1. By using class I can define a recipie for an object that I can use later for quick creation of another class. I can define the class object in the constructor.
+
+2. In one class I can pass in the constructor an argument that can also be a function from another class. I would look like the expample below:
+
+Example: 
+// This is a variable that contains function from the above class 
+const html = await RandomCrawler.getHtml();
+
+
+export default class Counter {
+	html: string;
+// Then I pass that variable as an argument in the constructor. I also need to point to that variable in the constructor by calling this.html = html;
+	constructor(html: string) {
+		this.html = html;
+	}
+
+
+3. I can use try and catch inside a class.  
+
+async getHtml(): Promise<string | null> {
+		try {
+			console.log(this.log);
+			const dataFromX = await axios.get('https://www.agriaffaires.co.uk/');
+      
+     
+			return dataFromX.data;
+		}	catch (error) {
+			console.log(error.toString());
+		}
+
+		return null;
+	}
+}
+
+But then I need to be sure that I return sth in both the try and the catch. 
